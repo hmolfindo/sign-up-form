@@ -5,39 +5,20 @@
 div{
     display: flex;
     flex-direction: row;
-}
-
-h1{
-    color: #FFFAF1;
-    font-size: 56px;
-}
-
-#top-logo{
-    max-width: 90px;
-    max-height: 120px;
-    margin-right: 5px;
-}
-
-#formdiv, form, #odin-wrapper{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-}
-
-#odin-wrapper{
-    margin-top: 40%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color:rgba(0, 0, 0, 70%);
-    width: 100%;
-    height: 7.5vw;
-    padding: 10px 0 10px 0;
+    background-color: #001021;
 }
 
 #sidebar,
-#formdiv{
+#content-div{
     height: 100vh;
+    max-width: 720px;
+}
+
+#content-div, form, #odin-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #sidebar{
@@ -47,7 +28,71 @@ h1{
     background-size: cover;
 }
 
-#formdiv{
+h1{
+    color: #FFFAF1;
+    font-size: 48px;
+}
+
+#odin-wrapper{
+    margin-top: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 70%);
+    width: 100%;
+    height: 6vw;
+    padding: 10px 0 10px 0;
+}
+
+#top-logo{
+    max-width: 60px;
+    max-height: 90px;
+    margin-right: 5px;
+}
+
+#content-div{
     width: 75vw;
     border: solid 1px;
+    background-color: #EBFFEB;
 }
+
+p, form, span, button{
+    margin-left: 30px;
+}
+
+h3, p, button, span{
+    font-size: 20px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    max-width: 75%;
+}
+
+#form-wrapper{
+    background-color: #F7FFF7;
+    width: 100%;
+    border-width: 1px;
+    display: grid;
+    grid-template-columns: auto auto;
+    box-shadow: 1.0px 2.1px 2.1px hsl(0deg 0% 0% / 0.47);
+    margin: 40px 0 20px 0;
+}
+
+button{
+    background-color: #615F3B;
+    color: #F7FFF7;
+    max-width: 196px;
+    border-radius: 8px;
+    padding: 10px 20px 10px 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+span{
+    font-size: 14px;
+}
+
+
+
+
+
