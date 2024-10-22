@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+}
+
+div{
+    display: flex;
+    flex-direction: row;
+}
+
+h1{
+    color: #FFFAF1;
+    font-size: 56px;
+}
+
+#top-logo{
+    max-width: 90px;
+    max-height: 120px;
+    margin-right: 5px;
+}
+
+#formdiv, form, #odin-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#odin-wrapper{
+    margin-top: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 70%);
+    width: 100%;
+    height: 7.5vw;
+    padding: 10px 0 10px 0;
+}
+
+#sidebar,
+#formdiv{
+    height: 100vh;
+}
+
+#sidebar{
+    width: 25vw;
+    border: solid 1px;
+    background-image: url("C:/Users/admin/repos/sign-up-form/microsoft-edge-Px0X7g1mc8k-unsplash.jpg");
+    background-size: cover;
+}
+
+#formdiv{
+    width: 75vw;
+    border: solid 1px;
+}
