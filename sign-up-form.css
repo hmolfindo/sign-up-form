@@ -15,7 +15,7 @@ div{
     max-width: 720px;
 }
 
-#content-div, form, #odin-wrapper{
+#content-div, form, #odin-wrapper, .form-field{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,7 +23,6 @@ div{
 
 #sidebar{
     width: 25vw;
-    border: solid 1px;
     background-image: url("C:/Users/admin/repos/sign-up-form/microsoft-edge-Px0X7g1mc8k-unsplash.jpg");
     background-size: cover;
 }
@@ -52,11 +51,10 @@ h1{
 
 #content-div{
     width: 75vw;
-    border: solid 1px;
     background-color: #EBFFEB;
 }
 
-p, form, span, button{
+p, form, span, button, h3{
     margin-left: 30px;
 }
 
@@ -67,14 +65,47 @@ h3, p, button, span{
     max-width: 75%;
 }
 
+label{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+}
+
 #form-wrapper{
+    display: flex;
+    flex-direction: column;
     background-color: #F7FFF7;
     width: 100%;
     border-width: 1px;
-    display: grid;
-    grid-template-columns: auto auto;
     box-shadow: 1.0px 2.1px 2.1px hsl(0deg 0% 0% / 0.47);
     margin: 40px 0 20px 0;
+    padding: 20px 0 20px 0;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 20px;
+}
+
+input{
+    border-radius: 3px;
+    border-width: 1px;
+    max-width: 85%;
+    margin-bottom: 15px;
+    height: 20px;
+    outline: none;
+}
+
+input:focus{
+    border: 1.5px solid blue;
+    box-shadow: 0.3px 0.6px 0.6px hsl(0deg 0% 0% / 0.49);
+}
+
+.form-field{
+    background-color: rgba(0, 0, 0, 0%);
 }
 
 button{
@@ -82,6 +113,8 @@ button{
     color: #F7FFF7;
     max-width: 196px;
     border-radius: 8px;
+    box-shadow: 0.3px 0.6px 0.6px hsl(0deg 0% 0% / 0.49);
+    border-width: 0;
     padding: 10px 20px 10px 20px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -91,6 +124,7 @@ button{
 span{
     font-size: 14px;
 }
+
 
 
 
