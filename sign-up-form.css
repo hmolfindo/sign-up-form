@@ -1,3 +1,15 @@
+@font-face {
+    font-family: "DM Sans";
+    src: url("fonts/dmsans-variablefont_opszwght-webfont.woff2") format("woff2"),
+    url("fonts/dmserifdisplay-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "DM Serif";
+    src: url("fonts/dmserifdisplay-regular-webfont.woff2") format("woff2"),
+    url("fonts/dmserifdisplay-regular-webfont.woff") format("woff");
+}
+
 *{
     margin: 0;
 }
@@ -60,13 +72,13 @@ p, form, span, button, h3{
 
 h3, p, button, span{
     font-size: 20px;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "DM Serif", Helvetica, Arial, sans-serif;
     font-weight: 600;
     max-width: 75%;
 }
 
 label{
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "DM Sans", Helvetica, Arial, sans-serif;
     font-size: 10px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
@@ -98,10 +110,16 @@ input{
     margin-bottom: 15px;
     height: 20px;
     outline: none;
+    font-family: "DM Sans", Helvetica, Arial, sans-serif;
 }
 
 input:focus{
     border: 2px solid cornflowerblue;
+    box-shadow: 0.3px 0.6px 0.6px hsl(0deg 0% 0% / 0.49);
+}
+
+input:focus:valid{
+    border: 2px solid rgb(59, 183, 59);
     box-shadow: 0.3px 0.6px 0.6px hsl(0deg 0% 0% / 0.49);
 }
 
