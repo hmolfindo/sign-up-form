@@ -12,7 +12,7 @@ div{
 #sidebar,
 #content-div{
     height: 100vh;
-    max-width: 720px;
+    max-width: 780px;
 }
 
 #content-div, form, #odin-wrapper, .form-field{
@@ -68,7 +68,7 @@ h3, p, button, span{
 label{
     font-family: Helvetica, Arial, sans-serif;
     font-size: 10px;
-    letter-spacing: 2.5px;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
     margin-bottom: 3px;
 }
@@ -91,8 +91,9 @@ form{
 }
 
 input{
+    appearance: none;
     border-radius: 3px;
-    border-width: 1px;
+    border: 2px solid gainsboro;
     max-width: 85%;
     margin-bottom: 15px;
     height: 20px;
@@ -100,8 +101,13 @@ input{
 }
 
 input:focus{
-    border: 1.5px solid blue;
+    border: 2px solid cornflowerblue;
     box-shadow: 0.3px 0.6px 0.6px hsl(0deg 0% 0% / 0.49);
+}
+
+input:user-invalid{
+    border: 2px solid rgba(255, 72, 72, 90%);
+    outline: none;
 }
 
 .form-field{
