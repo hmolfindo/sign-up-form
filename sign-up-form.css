@@ -24,7 +24,7 @@ div{
 #sidebar,
 #content-div{
     height: 100vh;
-    max-width: 780px;
+    max-width: 840px;
 }
 
 #content-div, form, #odin-wrapper, .form-field{
